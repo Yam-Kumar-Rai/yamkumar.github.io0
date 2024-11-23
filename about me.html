@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+    <nav>
+        <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="home-pic">
+                <img src="Image/amku.jpg" alt="profile pic">
+            </div>
+</section>
+    <section>
+        <div class="bio"></div>
+        <div class="decorative-line"></div>
+        <h2>About Me</h2>
+        <p>Hello! I am Yam Kumar Rai from Dumtoe, under Samtse Dzongkhag, a passionate web developer and designer with a strong interest in creating dynamic and user-friendly websites. With experience in projects related to database design, employee management, and local marketing apps, I aim to build digital solutions that are both functional and visually appealing. Additionally,I specialize in HTML, CSS, JavaScript, and React for building dynamic websites. I’m also proficient in responsive design, and I love using tools like Figma and Adobe XD for designing beautiful user interfaces.</p>
+    </section>
+
+<div class="container py-5">
+  <div class="cards" id="cards-container">
+    <div class="card">
+      <div class="card-icon">📐📐📐</div>
+      <div class="card-title">UI/UX Designer</div>
+      <div class="card-description">I have four years of experience in this field, along with extensive skills in UI/UX design.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📱📱📱</div>
+      <div class="card-title">App Development</div>
+      <div class="card-description">I have four years of experience and extensive expertise in UI/UX design, along with strong skills in app development.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">💻💻💻</div>
+      <div class="card-title">Web Development(HTML, CSS, JavaScript)</div>
+      <div class="card-description">I have three years of experience in this field of learning and developing various web.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊📊📊</div>
+      <div class="card-title">Data Analysis and Visualization</div>
+      <div class="card-description">I have four years of experience in data analysis and visualization, making complex data easy to understand.</div>
+    </div>
+  </div>
+</div>
+<section class="Education" id="Education">
+    <h2 class="Heading">Education</h2>
+    <div class="Timeline-items">
+        <div class="Timeline-item">
+            <div class="Timeline-dot"></div>
+            <div class="Timeline-date">2020</div>
+            <div class="Timeline-content">
+                <h3>Secondary School</h3>
+                <p>Till class 11 I studied at Dorokha Higher Secondary School, Samtse Dzongkhag</p>
+            </div>
+        </div>
+        <div class="Timeline-item">
+            <div class="Timeline-dot"></div>
+            <div class="Timeline-date">2021</div>
+            <div class="Timeline-content">
+                <h3>High School</h3>
+                <p>I completed my high school from Desi High School at Thimphu</p>
+            </div>
+        </div>
+        <div class="Timeline-item">
+            <div class="Timeline-dot"></div>
+            <div class="Timeline-date">2022</div>
+            <div class="Timeline-content">
+                <h3>University</h3>
+                <p>I qualified in Sherubtse College, University of Bhutan for higher education</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <p>Study Field</p>
+    <p>Bachelor of Data Science and Data Analytics - [Sherubtse College, University of Bhutan]</p>
+        
+    <p>Relevant Coursework: Database Management, Data Science, Web Development, UI/UX Designers</p>
+    
+</div>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.navlinks');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+
+    // Event listener for the toggle button
+    document.querySelector('.togglebtn').addEventListener('click', toggleMenu);
+    function adjustGrid() {
+    const cardsContainer = document.getElementById('cards-container');
+
+    // Get the width of the viewport
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 600) {
+      // Single column layout for mobile devices
+      cardsContainer.style.gridTemplateColumns = '1fr';
+    } else if (windowWidth <= 960) {
+      // Two columns for tablets and small laptops
+      cardsContainer.style.gridTemplateColumns = 'repeat(2, 1fr)';
+    } else {
+      // Three columns for larger screens (desktops)
+      cardsContainer.style.gridTemplateColumns = 'repeat(3, 1fr)';
+    }
+  }
+
+  // Adjust grid when the page loads and when the window is resized
+  window.addEventListener('resize', adjustGrid);
+  window.addEventListener('load', adjustGrid);
+</script>
+    <footer>
+        <p>Web Developers<br>
+        Sherubtse College<br>
+        Samtse, BHUTAN<br>
+        07230089.sherubtse@rub.edu.bt<br>
+        77383975</p>
+    </footer>  
+
+</body>
+</html>

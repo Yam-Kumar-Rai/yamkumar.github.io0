@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="family.css">
+</head>
+<body>
+    <nav>
+        <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Meet My Family</h1>
+    </header>
+
+    <div class="container">
+        <section class="family-member">
+            <img src="Image/Apaa.jpg" alt="Family Member 1">
+            <div>
+                <h3>Padham Lal</h3>
+                <p>Father | "He is my father, constantly working hard, he’s the steady anchor of the family—providing strength, guidance, and unconditional support, all while inspiring his children to pursue their dreams with confidence and courage."</p>
+                <p class="quote">"Family is where life begins and love never ends."</p>
+            </div>
+        </section>
+
+        <section class="family-member">
+            <img src="Image/ama.jpg" alt="Family Member 2">
+            <div>
+                <h3>Indra Moti Rai</h3>
+                <p>Mother | "She is my mother,always busy yet filled with boundless love, she dedicates herself wholeheartedly to nurturing and caring for her children, finding joy in their happiness and strength in supporting their dreams." </p>
+                <p class="quote">"The best thing to hold onto in life is each other."</p>
+            </div>
+        </section>
+
+        <section class="family-member">
+            <img src="Image/Nirs.jpg" alt="Family Member 3">
+            <div>
+                <h3>Nir Moni Rai</h3>
+                <p>Sister |"She is my elder sister constant companion and a lifelong friend and a second mother, she brings laughter, kindness, and unwavering support, making life brighter with her presence and sharing in every joy and challenge along the way."</p>
+                <p class="quote">"A sister is both your mirror – and your opposite."</p>
+            </div>
+        </section>
+        <section class="family-member">
+            <img src="Image/monsori.jpg" alt="Family Member 4">
+            <div>
+                <h3>Monsori Rai</h3>
+                <p>Sister | "She is my sencond elder sister constant companion and a lifelong friend, she brings laughter, kindness, and unwavering support, making life brighter with her presence and sharing in every joy and challenge along the way."</p>
+                <p class="quote">"Sisters are different flowers from the same garden."</p>
+            </div>
+        </section>
+        <section class="family-member">
+            <img src="Image/Bhai.jpg" alt="Family Member 5">
+            <div>
+                <h3>Parshan Rai</h3>
+                <p>Brother |"He is my younger brother a true friend and protector, he brings both laughter and strength to every moment, standing by with unwavering support and sharing in all of life’s adventures and challenges."</p>
+                <p class="quote">"A brother is a lifelong friend, a protector, and a partner in all of life’s adventures.""</p>
+            </div>
+        </section>
+        <section>
+         <h3>Joint Family</h3>
+            <img src="Image/family.jpg" alt="Family Member 3" width="100%">
+            <div>
+                <p>"They are  my joint family. We live as one family, sharing responsibilities, love, and support. It thrives on unity and togetherness, providing emotional strength and a deep sense of belonging. Along with countless moments of joy and happiness, we face challenges together, overcoming them through collective effort and mutual understanding.".
+                </p>
+                 </div>
+        </section>
+
+        <section class="family-gallery">
+            <h2>Family Gallery</h2>
+            <img src="Image/family.jpg" alt="Family Photo 1">
+            <img src="Image/Father.jpg" alt="Family Photo 2">
+            <img src="Image/mother.jpg" alt="Family Photo 3">
+            <img src="Image/Brothers.jpg" alt="Family Photo 3">
+        </section>
+    </div>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".togglebtn");
+  const navLinks = document.querySelector(".navlinks");
+
+  toggleBtn.addEventListener("click", () => {
+    toggleBtn.classList.toggle("active"); 
+    navLinks.classList.toggle("active"); 
+  });
+});
+
+      
+      </script>
+    <footer>
+        <p>Web Developers<br>
+        Sherubtse College<br>
+        Samtse, BHUTAN<br>
+        07230089.sherubtse@rub.edu.bt<br>
+        77383975</p>
+    </footer> 
+</body>
+</html>
